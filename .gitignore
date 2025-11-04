@@ -3,22 +3,32 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.egg-info/
-.venv/
-.env
+*.db
+*.log
 
-# Dados e saídas
-data/raw/
-data/interim/
-data/tmp/
-logs/
-reports/
+# Virtual env
+.venv/
+env/
+venv/
+ENV/
+
+# Dados locais
+data/
 exports/
+logs/
+models/
+notebooks/.ipynb_checkpoints/
 
 # Streamlit
-.streamlit/
+.streamlit/cache/
+.streamlit/secrets.toml
 
-# IDE / SO
+# IDE / Sistema
 .vscode/
+.idea/
 .DS_Store
-Thumbs.db
+
+# Configurações locais
+.env
+debug_*.py
+pyrightconfig.json
